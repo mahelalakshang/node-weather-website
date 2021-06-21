@@ -6,7 +6,7 @@ const fore=require('./utils/fore')
 
 const app=express()
 
-
+console.log("APPPP")
 console.log(path.join(__dirname,'../publi'))
 
 app.set('view engine', 'hbs')
