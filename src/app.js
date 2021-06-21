@@ -6,6 +6,8 @@ const fore=require('./utils/fore')
 
 const app=express()
 
+const portHeroku=process.env.PORT || 3000
+
 console.log("APPPP")
 console.log(path.join(__dirname,'../publi'))
 
@@ -98,7 +100,7 @@ res.render('404',{emss:"404 not found"})
 
 
 
-app.listen(3000,()=>{
+app.listen(portHeroku,()=>{
     console.log("Server running")
 })
 

@@ -23,7 +23,7 @@ wea.addEventListener('submit',(event)=>{
     event.preventDefault()
     const xx=search.value
 
-    fetch('http://localhost:3000/weather?address='+xx).then((res)=>{
+    fetch('/weather?address='+xx).then((res)=>{
     res.json().then((data)=>{
         if(data.error){
            p1.textContent=data.error
